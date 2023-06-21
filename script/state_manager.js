@@ -175,8 +175,7 @@ var StateManager = {
 
 	//mainly for local copy use, add(M) can fail so we can't shortcut them
 	//since set does not fail, we know state exists and can simply return the object
-	setget: function(stateName, value, noEvent){
-		$SM.set(stateName, value, noEvent);
+	setget: function(stateName, value, noEvent){		
 		return eval('('+$SM.buildPath(stateType)+')');
 	},
 
